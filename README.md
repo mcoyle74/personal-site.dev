@@ -1,0 +1,1 @@
+This is my personal site developed at Codeup's Full-Stack Bootcamp . It serves as an online resume and portfolio.
