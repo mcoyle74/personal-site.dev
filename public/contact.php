@@ -57,7 +57,7 @@
 
 <body>
 	<nav class="container-fluid navbar navbar-inverse navbar-collapse navbar-static-top">
-			<a class="navbar-brand" href="/welcome.php"><img id="brand" src="/img/4-ball-green.png" height="70"></a>
+			<a class="navbar-brand" href="/index.html"><img id="brand" src="/img/4-ball-green.png" height="70"></a>
 		<ul class="nav navbar-nav">
 			<li><a href="/resume.html" id="resume">Resume</a></li>
 			<li><a href="portfolio.php" id="portfolio">Portfolio</a></li>
