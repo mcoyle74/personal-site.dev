@@ -39,20 +39,22 @@ img.img-web-thumb {
 
 .navbar {
 	background-color: transparent;
-	padding-right: 30px;
+	padding-right: 10px;
 	margin-bottom: 0;
 }
 
 a.navbar-brand {
-	color: #74c410;
 	color: #3c3c3c;
 	text-shadow: none;
 }
 
 .navbar-nav>li>a {
-	color: #74c410;
 	color: #3c3c3c;
 	text-shadow: none;
+}
+
+.icon-bar {
+	background-color: #3c3c3c;
 }
 
 a:hover {
@@ -60,27 +62,27 @@ a:hover {
 }
 
 .navbar-brand:hover {
-	color: #5db700;
+	color: #080;
 }
 	
 #resume:hover {
-	background-color: #f0eeea;
-	color: #ff0c0c;
+	background-color: transparent;
+	color: #f00;
 }
 
 #portfolio:hover {
-	background-color: #f0eeea;
-	color: #bc79ff;
+	background-color: transparent;
+	color: #8f00ff;
 }
 
 #contact:hover {
-	background-color: #f0eeea;
-	color: #4d88ff;
+	background-color: transparent;
+	color: #0044ff;
 }
 
 #login:hover {
-	background-color: #f0eeea;
-	color: #ff8c00;
+	background-color: transparent;
+	color: #f80;
 }
 
 .placard {
