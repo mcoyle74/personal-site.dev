@@ -15,55 +15,29 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	<style type="text/css">
-		body {
-			font-family: 'Montserrat', sans-serif;
-			background-color: #d6dad6;
-			padding-top: 10px;
-		}
-		.jumbotron {
-			text-align: center;
-		}
-		.navbar-brand {
-			padding: 0 10px 0 0;
-			position: relative;
-			top: -7px;
-		}
-		.container-fluid {
-			padding-left: 10%;
-			padding-right: 10%;
-		}
-		a:hover {
-			transform: scale(1.1);
-		}	
-		#resume:hover {
-			color: #ff0c0c;
-		}
-		#portfolio:hover {
-			color: #bc79ff;
-		}
-		#contact:hover {
-			color: #4d88ff;
-		}
-		
-	</style>
+
+	<link rel="stylesheet" type="text/css" href="/css/style-index.css">
 
 </head>
 <body>
-	<nav class="container-fluid navbar navbar-inverse navbar-collapse navbar-static-top">
-			<a class="navbar-brand" href="/welcome.php"><img id="brand" src="/img/4-ball-green.png" height="70"></a>
-		<ul class="nav navbar-nav">
-			<li><a href="/resume.html" id="resume">Resume</a></li>
-			<li><a href="/portfolio.php" id="portfolio">Portfolio</a></li>
-			<li><a href="/contact.php" id="contact">Contact</a></li>
-			<li><a href="/login.php" id="login">Sign in</a></li>
-		</ul>
+	<nav class="container navbar navbar-static-top">
+		<a class="navbar-brand" href="/index.html">Michael David Coyle</a>
+		<div class="collapse navbar-collapse" id="mdc-navbar">
+			<ul class="nav navbar-nav">
+				<li><a href="/resume.html" id="resume">Resume</a></li>
+				<li><a href="/portfolio.php" id="portfolio">Portfolio</a></li>
+				<li><a href="/contact.php" id="contact">Contact</a></li>
+				<li><a href="/login.php" id="login">Sign in</a></li>
+			</ul>
+		</div>
 	</nav>
-	<div class="container-fluid">
-		<div class="jumbotron">
-			<h1>Michael&nbsp;David&nbsp;Coyle</h1>
-			<p>artist | educator | developer-in-training</p>
+	<div class="container" id="cover-image">
+		<!-- <h1 class="centered">Michael&nbsp;David&nbsp;Coyle</h1>
+		<p class="centered">artist | educator | developer-in-training</p> -->
+		<div class="placard">
+			<blockquote id="quote">I am not sure that I exist, actually. I am all the writers that I have read, all the people that I have met, all the women that I have loved; all the cities that I have visited, all my ancestors.<br>&mdash;Jorge Luis Borges</blockquote>
 		</div>
 	</div>
 
