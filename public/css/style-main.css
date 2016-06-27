@@ -6,7 +6,7 @@ body {
 	min-height: 100%;
 	font-family: 'Montserrat', sans-serif;
 	background-color: #f5f4f0;
-	color: #3c3c3c;
+	color: #5f5f40;
 }
 
 nav {
@@ -44,27 +44,27 @@ img.img-web-thumb {
 }
 
 a.navbar-brand {
-	color: #3c3c3c;
+	color: #5f5f40;
 	text-shadow: none;
 }
 
 .navbar-nav>li>a {
-	color: #3c3c3c;
+	color: #5f5f40;
 	text-shadow: none;
 }
 
 .icon-bar {
-	background-color: #3c3c3c;
+	background-color: #5f5f40;
 }
 
 .navbar-nav>li>a:hover {
 	background-color: transparent;
-	color: #189018;
-	transform: scale(1.1);
+	color: #189f18;
+	/*transform: scale(1.1);*/
 }
 
 .navbar-brand:hover {
-	color: #189018;
+	color: #189f18;
 }
 
 .placard {
@@ -74,7 +74,7 @@ a.navbar-brand {
 }
 
 #quote {
-	color: #5f5f5f;
+	color: #5f5f40;
 	font-size: 1.6em;
 	border-left: 5px solid #d0d0d0;
 	width: 100%;
