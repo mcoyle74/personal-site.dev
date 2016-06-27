@@ -57,32 +57,14 @@ a.navbar-brand {
 	background-color: #3c3c3c;
 }
 
-a:hover {
+.navbar-nav>li>a:hover {
+	background-color: transparent;
+	color: #189018;
 	transform: scale(1.1);
 }
 
 .navbar-brand:hover {
-	color: #080;
-}
-	
-#resume:hover {
-	background-color: transparent;
-	color: #f00;
-}
-
-#portfolio:hover {
-	background-color: transparent;
-	color: #8f00ff;
-}
-
-#contact:hover {
-	background-color: transparent;
-	color: #0044ff;
-}
-
-#login:hover {
-	background-color: transparent;
-	color: #f80;
+	color: #189018;
 }
 
 .placard {
