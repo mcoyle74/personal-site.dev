@@ -71,7 +71,7 @@ a:hover {
 	position: relative;
 	float: right;
 	font-size: 3vmax;
-	top: 2px;
+	top: -4px;
 }
 
 .centered {
