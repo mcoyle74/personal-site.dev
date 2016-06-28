@@ -44,19 +44,32 @@
 	
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-6 col-md-3">
+			<div class="col-sm-4 col-md-4">
 				<a href="/calculator.html" class="thumbnail">
 					<img src="/img/calculator.png" alt="Calculator">
+					<div class="caption">
+						<h3>Calculator</h3>
+						<p>HTML, CSS and JavaScript</p>
+					</div>
+
 				</a>
 			</div>
-			<div class="col-xs-6 col-md-3">
+			<div class="col-sm-4 col-md-4">
 				<a href="/weather_map.html" class="thumbnail">
 					<img src="/img/weather_map.png" alt="Weather Map">
+					<div class="caption">
+						<h3>Weather Application</h3>
+						<p>HTML, CSS and JavaScript</p>
+					</div>
 				</a>
 			</div>
-			<div class="col-xs-6 col-md-3">
+			<div class="col-sm-4 col-md-4">
 				<a href="/simon.html" class="thumbnail">
 					<img src="/img/simon.png" alt="Simple Simon">
+					<div class="caption">
+						<h3>Simple Simon Game</h3>
+						<p>HTML, CSS and JavaScript</p>
+					</div>
 				</a>
 			</div>
 
