@@ -13,12 +13,12 @@ body {
 
 h1 {
 	display: inline;
-	font-size: 3vmin;
+	padding-left: .5em;
+	font-size: 2.5vmax;
 }
 
 h1>a {
 	color: #5f5f40;
-	padding: 2%;
 }
 
 div.home {
@@ -26,6 +26,7 @@ div.home {
 	height: 100vh;
 	width: 100%;
 	text-align: center;
+	padding-top: 1em;
 	margin: auto;
 }
 
@@ -36,7 +37,7 @@ div.page-header {
 ul {
 	list-style: none;
 	color: #ccc;
-	font-size: 7vmin;
+	font-size: 3.75vmax;
 	padding: 0;
 	word-spacing: .5em;
 }
@@ -57,7 +58,7 @@ a {
 }
 
 a.fa {
-	padding-right: 12px;
+	padding-right: .5em;
 }
 	
 a:hover {
@@ -69,7 +70,8 @@ a:hover {
 	display: inline;
 	position: relative;
 	float: right;
-	font-size: 1.5em;
+	font-size: 3vmax;
+	top: 2px;
 }
 
 .centered {
@@ -79,7 +81,7 @@ a:hover {
 li[data-id='1'] {
 	position: relative;
 	/*top: 1100px;*/
-	left: 1200px;
+	left: 1900px;
 }
 
 li[data-id='2'] {
@@ -97,7 +99,7 @@ li[data-id='3'] {
 li[data-id='4'] {
 	position: relative;
 	/*top: -700px;*/
-	left: -1800px;
+	left: 1800px;
 }
 
 li[data-id='5'] {
@@ -118,7 +120,7 @@ li[data-id='7'] {
 }
 li[data-id='8'] {
 	position: relative;
-	top: -1800px;
+	top: 1800px;
 }
 li[data-id='9'] {
 	position: relative;
@@ -134,7 +136,7 @@ li[data-id='11'] {
 }
 li[data-id='12'] {
 	position: relative;
-	top: -900px;
+	top: 1700px;
 }
 li[data-id='13'] {
 	position: relative;
@@ -142,23 +144,23 @@ li[data-id='13'] {
 }
 li[data-id='14'] {
 	position: relative;
-	top: -1200px;
+	top: 1200px;
 }
 li[data-id='15'] {
 	position: relative;
-	top: 1000px;
+	top: -1000px;
 }
 li[data-id='16'] {
 	position: relative;
-	top: -900px;
+	top: 1200px;
 }
 li[data-id='17'] {
 	position: relative;
-	top: -950px;
+	top: -1500px;
 }
 li[data-id='18'] {
 	position: relative;
-	top: -1600px;
+	top: 1600px;
 }
 li[data-id='19'] {
 	position: relative;
@@ -166,7 +168,7 @@ li[data-id='19'] {
 }
 li[data-id='20'] {
 	position: relative;
-	top: 900px;
+	top: 960px;
 }
 li[data-id='21'] {
 	position: relative;
@@ -174,7 +176,7 @@ li[data-id='21'] {
 }
 li[data-id='22'] {
 	position: relative;
-	top: -1100px;
+	top: 1100px;
 }
 li[data-id='23'] {
 	position: relative;
@@ -182,15 +184,15 @@ li[data-id='23'] {
 }
 li[data-id='24'] {
 	position: relative;
-	top: -900px;
+	top: 1050px;
 }
 li[data-id='25'] {
 	position: relative;
-	top: 900px;
+	top: -900px;
 }
 li[data-id='26'] {
 	position: relative;
-	top: -1500px;
+	top: 1500px;
 }
 li[data-id='27'] {
 	position: relative;
@@ -198,15 +200,15 @@ li[data-id='27'] {
 }
 li[data-id='28'] {
 	position: relative;
-	top: -1000px;
+	top: 1000px;
 }
 li[data-id='29'] {
 	position: relative;
-	top: 1100px;
+	top: -1100px;
 }
 li[data-id='30'] {
 	position: relative;
-	top: -900px;
+	top: 900px;
 }
 li[data-id='31'] {
 	position: relative;
@@ -214,7 +216,43 @@ li[data-id='31'] {
 }
 li[data-id='32'] {
 	position: relative;
-	top: -900px;
+	top: 900px;
+}
+li[data-id='33'] {
+	position: relative;
+	top: -1800px;
+}
+li[data-id='34'] {
+	position: relative;
+	top: 1000px;
+}
+li[data-id='35'] {
+	position: relative;
+	top: -1100px;
+}
+li[data-id='36'] {
+	position: relative;
+	top: 1400px;
+}
+li[data-id='37'] {
+	position: relative;
+	top: -1200px;
+}
+li[data-id='38'] {
+	position: relative;
+	top: 1300px;
+}
+li[data-id='39'] {
+	position: relative;
+	top: -1500px;
+}
+li[data-id='40'] {
+	position: relative;
+	top: 1600px;
+}
+li[data-id='41'] {
+	position: relative;
+	top: -1200px;
 }
 
 .placard {
