@@ -28,6 +28,10 @@ button.options {
 	border-radius: 8px;
 	margin-bottom: 5px;
 }
+label {
+	float: right;
+	padding: 10px 0 0 10px;
+}
 #score {
 	position: absolute;
 	margin-right: 25px;

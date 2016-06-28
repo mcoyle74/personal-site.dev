@@ -99,13 +99,15 @@ $(document).ready(function () {
 		var link = $('#link')
 		var optionPressed = $(this).data('option');
 		if (optionPressed == 1) {
-			link.attr('href', '/css/style.css');
+			link.attr('href', '/css/style-simon.css');
 		} else if (optionPressed == 2) {
 			link.attr('href', '/css/style-lego.css');
 		} else if (optionPressed == 3) {
-			link.attr('href', '/css/style.css');
+			link.attr('href', '/css/style-simon.css');
+			alert('New options coming soon.')
 		} else if (optionPressed == 4)  {
-			link.attr('href', '/css/style.css');
+			link.attr('href', '/css/style-simon.css');
+			alert('New options coming soon.')
 		}
 	});
 
