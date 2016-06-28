@@ -45,12 +45,16 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4 col-md-4">
-				<a href="/calculator.html" class="thumbnail">
+				<a href="/calculator.html" class="thumbnail" target="_blank">
 					<img src="/img/calculator.png" alt="Calculator">
 					<div class="caption">
 						<h3>Calculator</h3>
 						<p>HTML, CSS and JavaScript</p>
-						<p>Percent (%) and plus-minus(&plusmn;) buttons are not yet functional.</p>
+						<p>
+							A basic calculator. The layout is based on iOS Calculator, but the color scheme is that of the US and Texas flag.
+							<br>
+							Percent (%) and plus-minus(&plusmn;) buttons are not yet functional.
+						</p>
 						<div class="progress">
 							<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
 								90%
@@ -61,27 +65,35 @@
 				</a>
 			</div>
 			<div class="col-sm-4 col-md-4">
-				<a href="/weather_map.html" class="thumbnail">
+				<a href="/weather_map.html" class="thumbnail" target="_blank">
 					<img src="/img/weather_map.png" alt="Weather Map">
 					<div class="caption">
 						<h3>Weather Application</h3>
 						<p>HTML, CSS, Bootstrap, JavaScript, jQuery and openweathermap.org API</p>
-						<p>Fully functional, but looking to add extra styling based on the forecast.</p>
+						<p>
+							Gives a 3-day weather forecast based on a form input or by dragging the map marker. Includes a background image based on the forecast.
+							<br>
+							Fully functional, but may add custom styling in the future.
+						</p>
 						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100" style="width: 96%;">
-								96%
+							<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+								Done!
 							</div>
 						</div>
 					</div>
 				</a>
 			</div>
 			<div class="col-sm-4 col-md-4">
-				<a href="/simon.html" class="thumbnail">
+				<a href="/simon.html" class="thumbnail" target="_blank">
 					<img src="/img/simon.png" alt="Simple Simon">
 					<div class="caption">
 						<h3>Simple Simon Game</h3>
 						<p>HTML, CSS, JavaScript and jQuery.</p>
-						<p>The game is fully functional, but I'm looking to add two more CSS options.</p>
+						<p>
+							Memory game with optional styles.
+							<br>
+							The game logic works, but I'm looking to add at least two more styles.
+						</p>
 						<div class="progress">
 							<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
 								95%
