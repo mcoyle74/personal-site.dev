@@ -41,13 +41,28 @@
 	<div class="container">
 		<h1>Portfolio</h1>
 	</div>
-	<div class="container perspective">
-		<img src="/img/code-style.png" class="img-web-thumb" id="img-1" alt="web page screen shot">
-		<img src="/img/flag-texas.png" class="img-web-thumb" id="img-2" alt="web page screen shot">
-		<img src="/img/position.png" class="img-web-thumb" id="img-3" alt="web page screen shot">
-		<img src="/img/position2.png" class="img-web-thumb" id="img-4" alt="web page screen shot">
-		<img src="/img/img_1373.jpg" class="img-web-thumb" id="img-5" alt="Michael Coyle Profile Picture">
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-md-3">
+				<a href="/calculator.html" class="thumbnail">
+					<img src="/img/calculator.png" alt="Calculator">
+				</a>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<a href="/weather_map.html" class="thumbnail">
+					<img src="/img/weather_map.png" alt="Weather Map">
+				</a>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<a href="/simon.html" class="thumbnail">
+					<img src="/img/simon.png" alt="Simple Simon">
+				</a>
+			</div>
+
+			</div>
 	</div>
+
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
