@@ -50,6 +50,12 @@
 					<div class="caption">
 						<h3>Calculator</h3>
 						<p>HTML, CSS and JavaScript</p>
+						<p>Percent (%) and plus-minus(&plusmn;) buttons are not yet functional.</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+								90%
+							</div>
+						</div>
 					</div>
 
 				</a>
@@ -59,7 +65,13 @@
 					<img src="/img/weather_map.png" alt="Weather Map">
 					<div class="caption">
 						<h3>Weather Application</h3>
-						<p>HTML, CSS and JavaScript</p>
+						<p>HTML, CSS, Bootstrap, JavaScript, jQuery and openweathermap.org API</p>
+						<p>Fully functional, but looking to add extra styling based on the forecast.</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100" style="width: 96%;">
+								96%
+							</div>
+						</div>
 					</div>
 				</a>
 			</div>
@@ -68,7 +80,13 @@
 					<img src="/img/simon.png" alt="Simple Simon">
 					<div class="caption">
 						<h3>Simple Simon Game</h3>
-						<p>HTML, CSS and JavaScript</p>
+						<p>HTML, CSS, JavaScript and jQuery.</p>
+						<p>The game is fully functional, but I'm looking to add two more CSS options.</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+								95%
+							</div>
+						</div>
 					</div>
 				</a>
 			</div>
