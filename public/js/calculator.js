@@ -29,6 +29,7 @@ var	completed = false;
 var processInputsLeft = function () {
 	if (display.operator == '') { 
 		display.operandLeft += this.value;
+		console.log(this.value);
 		display.output();
 	} else {
 		display.operandRight += this.value;
@@ -37,15 +38,13 @@ var processInputsLeft = function () {
 }
 
 var processInputsCenter = function() {
-	if (this.value == '-1') {
-		display.operandLeft.value *= -1
-
-	} else if (this.value == '%') {
-		display.operandLeft *= 0.01
-	} else {
 		display.operator = this.value;
+		if (display.operator == '%') {
+			display.operandLeft *= 0.01;
+		} else if (display.operator == '&plusmn;') {
+			display.operandLeft *= -1;
+		}
 		display.output();
-	}
 }
 
 var display = {
@@ -97,6 +96,7 @@ plusminusButton.addEventListener('click', display.processInputsLeft, false);
 percentButton.addEventListener('click', display.processInputsLeft, false);
 
 var digitButtonPush = document.getElementsByClassName('digit', false);
+console.log(digitButtonPush);
 for (var i = 0; i < digitButtonPush.length; i++) {
 	digitButtonPush[i].addEventListener('click', processInputsLeft, false);
 }
