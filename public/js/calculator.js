@@ -68,11 +68,11 @@ var processOperands = function () {
 	}
 }
 
-var processInputsCenter = function() {
+var processOperators = function() {
 		display.operator = this.value;
 		if (display.operator == '%') {
 			display.operandLeft *= 0.01;
-		} else if (display.operator == '&plusmn;') {
+		} else if (display.operator == '+-') {
 			display.operandLeft *= -1;
 		}
 		display.output();
@@ -91,7 +91,7 @@ for (var i = 0; i < digitButtonPush.length; i++) {
 
 var operatorButtonPush = document.getElementsByClassName('operators')
 for (var i = 0; i < operatorButtonPush.length; i++) {
-	operatorButtonPush[i].addEventListener('click', processInputsCenter, false);
+	operatorButtonPush[i].addEventListener('click', processOperators, false);
 }
 
 equalsButton.addEventListener('click', display.answer, false);
