@@ -26,10 +26,12 @@ var equalsButton = document.getElementById('equals');
 
 var	completed = false;
 
-var processInputsLeft = function () {
+var processOperands = function () {
 	if (display.operator == '') { 
+		if (this.value == '.') {
+			pointButton.removeEventListener('click', processOperands);
+		}
 		display.operandLeft += this.value;
-		console.log(this.value);
 		display.output();
 	} else {
 		display.operandRight += this.value;
@@ -92,13 +94,13 @@ var display = {
 };
 
 clearButton.addEventListener('click', display.clear, false);
-plusminusButton.addEventListener('click', display.processInputsLeft, false);
-percentButton.addEventListener('click', display.processInputsLeft, false);
+plusminusButton.addEventListener('click', display.processOperands, false);
+percentButton.addEventListener('click', display.processOperands, false);
 
 var digitButtonPush = document.getElementsByClassName('digit', false);
 console.log(digitButtonPush);
 for (var i = 0; i < digitButtonPush.length; i++) {
-	digitButtonPush[i].addEventListener('click', processInputsLeft, false);
+	digitButtonPush[i].addEventListener('click', processOperands, false);
 }
 
 var operatorButtonPush = document.getElementsByClassName('operators')
