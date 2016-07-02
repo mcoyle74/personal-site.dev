@@ -34,6 +34,9 @@ var processOperands = function () {
 		display.operandLeft += this.value;
 		display.output();
 	} else {
+		if (this.value == '.') {
+			pointButton.removeEventListener('click', processOperands);
+		}
 		display.operandRight += this.value;
 		display.output();
 	}
@@ -47,6 +50,7 @@ var processInputsCenter = function() {
 			display.operandLeft *= -1;
 		}
 		display.output();
+		pointButton.addEventListener('click', processOperands);
 }
 
 var display = {
