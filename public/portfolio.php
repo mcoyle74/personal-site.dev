@@ -53,17 +53,18 @@
 						<p>
 							A basic calculator. The layout is based on iOS Calculator, but the color scheme is that of the US and Texas flag.
 							<br>
-							Percent (%) and plus-minus(&plusmn;) buttons are not yet functional.
+							Percent (%) and plus-minus(&plusmn;) buttons only work on the left operand, and a new operator does not clear the right operand.
 						</p>
 						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-								90%
+							<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+								95%
 							</div>
 						</div>
 					</div>
 
 				</a>
 			</div>
+
 			<div class="col-sm-4 col-md-4">
 				<a href="/weather_map.html" class="thumbnail" target="_blank">
 					<img src="/img/weather_map.png" alt="Weather Map">
@@ -73,16 +74,12 @@
 						<p>
 							Gives a 3-day weather forecast based on a form input or by dragging the map marker. Includes a background image based on the forecast.
 							<br>
-							Fully functional, but may add custom styling in the future.
+							Fully functional.
 						</p>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-								Done!
-							</div>
-						</div>
 					</div>
 				</a>
 			</div>
+
 			<div class="col-sm-4 col-md-4">
 				<a href="/simon.html" class="thumbnail" target="_blank">
 					<img src="/img/simon.png" alt="Simple Simon">
@@ -102,8 +99,7 @@
 					</div>
 				</a>
 			</div>
-
-			</div>
+		</div>
 	</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
