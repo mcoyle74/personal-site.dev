@@ -84,6 +84,12 @@ a.navbar-brand {
 #img-1 {
 	margin-left: 0;
 }
+
 .perspective {
 	perspective: 1200px;
+}
+
+.progress-bar {
+	background-image: none;
+	background-color: #189f18;
 }
