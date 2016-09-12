@@ -21,7 +21,7 @@
 <body>
 	<div class="page-header">
 		<h1>
-			<a href="/index.html">michael&nbsp;david&nbsp;coyle</a>
+			<a href="/index.php">michael&nbsp;david&nbsp;coyle</a>
 		</h1>
 		<p class="icon-holder">
 			<a href="mailto:mcoyle74@gmail.com" class="fa fa-envelope" target="_blank"></a>

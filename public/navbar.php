@@ -9,14 +9,13 @@ $navbar = '<nav class="navbar navbar-static-top">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="/index.html">Michael David Coyle</a>
+			<a class="navbar-brand" href="/index.php">Michael David Coyle</a>
 		</div>
 		<div class="collapse navbar-collapse navbar-right" id="mdc-navbar">
 			<ul class="nav navbar-nav">
 				<li><a href="/resume.html" id="resume">Resume</a></li>
 				<li><a href="/portfolio.php" id="portfolio">Portfolio</a></li>
-				<li><a href="/contact.php" id="contact">Contact</a></li>
-				<li><a href="/login.php" id="login">Sign in</a></li>
+				<li><a href="mailto:mcoyle74@gmail.com" id="contact">Contact</a></li>
 			</ul>
 		</div>
 	</div>
