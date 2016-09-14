@@ -50,14 +50,14 @@ extract(pageController());
 					<li>I spent the late 90s builing furniture.</li>
 					<li>Began studying visual arts at San Antonio College in 1999, built a portfolio and won a merit scholarship to transfer to The School of the Art Institute of Chicago in 2005.</li>
 					<li>I have two amazing children whom I love and cherish more than anything</li>
-					<li>Recently graduated from <a href="http://codeup.com">Codeup</a>, an immersive learning program focused on full-stack web development.</li>
+					<li>Recently graduated from <a href="http://codeup.com" target="_blank">Codeup</a>, an immersive learning program focused on full-stack web development.</li>
 					<li>Currently I teach Drawing and Art Appreciation at San Antonio College, but I am also looking for an opportunity in web development. And, I am always learning.</li>
 				</ul>
 			
 				<h4>Education:</h4>
 				<ul>
-					<li>Master of Fine Arts, <a href="https://www.utexas.edu/finearts/aah/academic/studio-art/graduate/overview">The University of Texas at Austin</a>, 2010</li>
-					<li>Bachelor of Fine Arts, <a href="http://www.saic.edu/index.html">The School of the Art Institute of Chicago</a>, 2007</li>
+					<li>Master of Fine Arts, <a href="https://www.utexas.edu/finearts/aah/academic/studio-art/graduate/overview" target="_blank">The University of Texas at Austin</a>, 2010</li>
+					<li>Bachelor of Fine Arts, <a href="http://www.saic.edu/index.html" target="_blank">The School of the Art Institute of Chicago</a>, 2007</li>
 				</ul>
 				
 				<h4>Interests:<h4>
