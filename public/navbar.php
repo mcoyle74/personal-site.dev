@@ -15,6 +15,7 @@ $navbar = '<nav class="navbar navbar-static-top">
 			<ul class="nav navbar-nav">
 				<li><a href="/resume.html" id="resume">Resume</a></li>
 				<li><a href="/portfolio.php" id="portfolio">Portfolio</a></li>
+				<li><a href="/about.php">About</a></li>
 				<li><a href="mailto:mcoyle74@gmail.com" id="contact">Contact</a></li>
 			</ul>
 		</div>

@@ -51,10 +51,10 @@
 		<ul>
 			<li class="verbs" data-id="1"><a href="/resume.html" id="resume">working</a></li>
 			<li class="verbs" data-id="2"><a href="/portfolio.php" id="portfolio">learning</a></li>
-			<li class="verbs" data-id="3"><a href="/#" id="teaching">teaching</a></li>
-			<li class="verbs" data-id="4"><a href="/#" id="playing">playing</a></li>
-			<li class="verbs" data-id="5"><a href="/#" id="about">living</a></li>
-			<li class="verbs" data-id="6"><a href="/contact.php" id="contact">listening</a></li>
+			<li class="verbs" data-id="3"><a href="/teaching.php" id="teaching">teaching</a></li>
+			<li class="verbs" data-id="4"><a href="/playing.php" id="playing">playing</a></li>
+			<li class="verbs" data-id="5"><a href="/about.php" id="about">living</a></li>
+			<li class="verbs" data-id="6"><a href="mailto:mcoyle74@gmail.com" id="contact">listening</a></li>
 		</ul>
 		<ul>
 			<li class="other-verbs" data-id="36">seeing</li>
@@ -81,7 +81,7 @@
 	</div>
 
 	<div class="container quotes" hidden>
-		<blockquote id="borges">I am not sure that I exist, actually. I am all the writers that I have read, all the people that I have met, all the women that I have loved; all the cities that I have visited, all my ancestors.<br>&mdash;Jorge Luis Borges</blockquote>
+		
 	</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
