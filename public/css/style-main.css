@@ -59,7 +59,7 @@ a.navbar-brand {
 .navbar-nav>li>a:hover {
 	background-color: transparent;
 	color: #189f18;
-	/*transform: scale(1.1);*/
+	transform: scale(1.1);
 }
 
 .navbar-brand:hover {
@@ -112,4 +112,9 @@ a.navbar-brand {
 
 .text-resume {
 	font-size: 1.2em;
+}
+
+a {
+	color: #189f18;
+	text-decoration: none;
 }
