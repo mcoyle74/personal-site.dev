@@ -72,12 +72,10 @@ a.navbar-brand {
 	top: 50px;
 }
 
-#quote {
-	color: #5f5f40;
-	font-size: 1.6em;
-	border-left: 5px solid #d0d0d0;
-	width: 100%;
-	margin: auto;
+#borges {
+	/*color: #5f5f40;
+	font-size: 1.6em;*/
+	border-left: 5px solid #dcdcd8;
 }
 
 #img-1 {
