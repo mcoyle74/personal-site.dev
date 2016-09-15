@@ -49,9 +49,11 @@ extract(pageController());
 					<li>Served in the United States Marine Corps in the mid 90s.</li>
 					<li>I spent the late 90s builing furniture.</li>
 					<li>Began studying visual arts at San Antonio College in 1999, built a portfolio and in 2005 won a merit scholarship to The School of the Art Institute of Chicago.</li>
-					<li>I have two amazing children whom I love and cherish more than anything.</li>
+					<li>I have two amazing children I love and cherish more than anything.</li>
+					<li>I accepted a fellowship from The University of Texas at Austin's Department of Art and Art History and spent three years there as a graduate student and teaching assistant.</li>
 					<li>Recently graduated from <a href="http://codeup.com" target="_blank">Codeup</a>, an immersive learning program focused on full-stack web development.</li>
-					<li>Currently I teach Drawing and Art Appreciation at San Antonio College, but I am also looking for an opportunity in web development. And, I am always learning.</li>
+					<li>Currently I teach Drawing and Art Appreciation at San Antonio College, and I'm looking for an opportunity in web development.</li>
+					<li>I am always learning.</li>
 				</ul>
 			
 				<h4>Education:</h4>
