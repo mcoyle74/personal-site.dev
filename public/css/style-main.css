@@ -116,3 +116,7 @@ a {
 	color: #189f18;
 	text-decoration: none;
 }
+
+.thumbnail {
+	height: 500px;
+}

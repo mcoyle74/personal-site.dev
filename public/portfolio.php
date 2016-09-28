@@ -39,16 +39,26 @@ extract(pageController());
 	
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-4 col-md-4">
-				<a href="/calculator.html" class="thumbnail" target="_blank">
-					<img src="/img/calculator.png" alt="Calculator">
+			<div class="col-sm-4 col-md-4 thumb-portfolio">
+				<a href="https://questhub.tech" class="thumbnail" target="_blank">
+					<img src="/img/questhub_img.png" alt="questhub.tech">
 					<div class="caption">
-						<h3>Calculator</h3>
-						<p>HTML, CSS and JavaScript</p>
+						<h3>Questhub</h3>
+						<p>Questhub connects users to social and networking events in the San Antonio area. Collaboration for Codeup capstone project using PHP with the Laravel framework.</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-sm-4 col-md-4 thumb-portfolio">
+				<a href="/simon.html" class="thumbnail" target="_blank">
+					<img src="/img/simon.png" alt="Simple Simon">
+					<div class="caption">
+						<h3>Simple Simon Game</h3>
+						<p>HTML, CSS, JavaScript and jQuery.</p>
 						<p>
-							A basic calculator. The layout is based on iOS Calculator, but the color scheme is that of the US and Texas flag.
+							Memory game with optional styles.
 							<br>
-							Percent (%) and plus-minus(&plusmn;) buttons only work on the left operand, and a new operator does not clear the right operand.
+							The game logic works, but I'm looking to add at least two more styles.
 						</p>
 						<div class="progress">
 							<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
@@ -56,11 +66,10 @@ extract(pageController());
 							</div>
 						</div>
 					</div>
-
 				</a>
 			</div>
 
-			<div class="col-sm-4 col-md-4">
+			<div class="col-sm-4 col-md-4 thumb-portfolio">
 				<a href="/weather_map.html" class="thumbnail" target="_blank">
 					<img src="/img/weather_map.png" alt="Weather Map">
 					<div class="caption">
@@ -75,16 +84,16 @@ extract(pageController());
 				</a>
 			</div>
 
-			<div class="col-sm-4 col-md-4">
-				<a href="/simon.html" class="thumbnail" target="_blank">
-					<img src="/img/simon.png" alt="Simple Simon">
+			<div class="col-sm-4 col-md-4 thumb-portfolio">
+				<a href="/calculator.html" class="thumbnail" target="_blank">
+					<img src="/img/calculator.png" alt="Calculator">
 					<div class="caption">
-						<h3>Simple Simon Game</h3>
-						<p>HTML, CSS, JavaScript and jQuery.</p>
+						<h3>Calculator</h3>
+						<p>HTML, CSS and JavaScript</p>
 						<p>
-							Memory game with optional styles.
+							A basic calculator. The layout is based on iOS Calculator, but the color scheme is that of the US and Texas flag.
 							<br>
-							The game logic works, but I'm looking to add at least two more styles.
+							Percent (%) and plus-minus(&plusmn;) buttons only work on the left operand, and a new operator does not clear the right operand.
 						</p>
 						<div class="progress">
 							<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
