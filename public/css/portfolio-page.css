@@ -1,18 +1,26 @@
 body {
 	background-image: url(/img/train-photo-portrait.jpg);
-	background-size: auto 100vh;
+	background-size: 100vw auto;
 	background-position: center top;
-}
-
-@media (min-width: 768px), (orientation: landscape) {
-	body {
-		background-image: url(/img/train-photo.jpg);
-		background-size: 100vw auto;
-		background-position: center top;
-	}
 }
 
 .navbar-default {
 	background-color: transparent;
 	border-color: transparent;
 }	
+
+@media (min-width: 768px), (orientation: landscape) {
+	body {
+		background-image: url(/img/train-photo.jpg);
+		background-size: auto 100vh;
+		background-position: center top;
+	}
+}
+
+@media (min-width: 1065px) {
+	body {
+		background-image: url(/img/train-photo.jpg);
+		background-size: 100vw auto;
+		background-position: center top;
+	}
+}
