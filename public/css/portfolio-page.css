@@ -1,10 +1,18 @@
 body {
+	position: relative;
 	background-image: url(/img/subway-portrait.jpg);
 	background-size: 100vw auto;
+	min-height: 100%;
 	background-position: center top;
 	background-color: #333;
 	background-repeat: no-repeat;
 	font-family: Avenir, sans-serif;
+}
+
+header,
+section	{
+	position: relative;
+	min-height: 100vh;
 }
 
 .page-header {
@@ -34,6 +42,21 @@ body {
 
 .page-header a {
 	color: #fff;
+}
+
+#work {
+	background-color: #333;
+	color: #fff;
+}
+
+#cv {
+	background-color: #fff;
+	color: #333;
+}
+
+#contact {
+	background-color: #aaa;
+	color: #333;
 }
 
 @media (orientation: landscape) {

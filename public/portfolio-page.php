@@ -25,6 +25,7 @@
 </head>
 <body>
 
+<header>
 <nav class="navbar navbar-default hidden">
 	<div class="container">
 	<!-- Brand and toggle get grouped for better mobile display -->
@@ -52,11 +53,24 @@
 <div class="page-header">
 	<h1>Norbert Clyde Martinez,&nbsp;Jr.</h1>
 	<ul>
-		<li><a href="#">Work</a></li>
-		<li><a href="#">CV</a></li>
-		<li><a href="#">Contact</a></li>
+		<li><a href="#work">Work</a></li>
+		<li><a href="#cv">CV</a></li>
+		<li><a href="#contact">Contact</a></li>
 	</ul>
 </div>
+</header>
+
+<section class="container" id="work">
+	<h1>Work</h1>
+</section>
+
+<section class="container" id="cv">
+	<h1>CV</h1>
+</section>
+
+<section class="container" id="contact">
+	<h1>Contact</h1>
+</section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
