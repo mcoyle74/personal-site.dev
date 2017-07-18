@@ -36,6 +36,13 @@ body {
 	color: #fff;
 }
 
+@media (orientation: landscape) {
+	body {
+		background-image: url(/img/subway.jpg);
+	}
+	
+}
+
 @media (min-width: 768px) {
 	body {
 		background-image: url(/img/subway.jpg);
