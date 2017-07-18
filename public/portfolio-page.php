@@ -35,7 +35,7 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="#">Norbert Clyde Martinez, Jr.</a>
+		<a class="navbar-brand" href="#">Norbert Clyde Martinez,&nbsp;Jr.</a>
 	</div>
 
 	<!-- Collect the nav links, forms, and other content for toggling -->
@@ -50,8 +50,8 @@
 </nav>
 
 <div class="page-header">
-	<h1>Norbert Clyde Martinez, Jr.</h1>
-	<ul class="navbar-nav inline">
+	<h1>Norbert Clyde Martinez,&nbsp;Jr.</h1>
+	<ul>
 		<li><a href="#">Work</a></li>
 		<li><a href="#">CV</a></li>
 		<li><a href="#">Contact</a></li>

@@ -7,15 +7,68 @@ body {
 	font-family: Avenir, sans-serif;
 }
 
+.page-header {
+	position: relative;
+	top: 35vh;
+	padding: 0;
+	margin: 0;
+	border: none;
+	color: #fff;
+	text-align: center;
+}
+
+.page-header h1 {
+	font-size: 3em;
+}
+
+.page-header ul {
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+}
+
+.page-header li {
+	display: inline-block;
+	padding: 0 15px;
+}
+
+.page-header a {
+	color: #fff;
+}
+
 @media (min-width: 768px) {
 	body {
 		background-image: url(/img/subway.jpg);
 		background-size: auto 100vh;
 	}
+
+	.page-header h1 {
+		font-size: 4em;
+	}
+
+	.page-header li {
+		padding: 0 30px;
+	}
+
+	.page-header a {
+		font-size: 1.2em;
+	}
 }
 
-@media (min-width: 1065px) {
+@media (min-width: 1024px) {
 	body {
 		background-size: 100vw auto;
+	}
+
+	.page-header h1 {
+		font-size: 5em;
+	}
+
+	.page-header li {
+		padding: 0 50px;
+	}
+
+	.page-header a {
+		font-size: 1.33em;
 	}
 }
