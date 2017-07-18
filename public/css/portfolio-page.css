@@ -1,5 +1,7 @@
 body {
 	position: relative;
+	margin: 0;
+	top: 0;
 	background-image: url(/img/subway-portrait.jpg);
 	background-size: 100vw auto;
 	min-height: 100%;
@@ -27,6 +29,7 @@ section	{
 
 .page-header h1 {
 	font-size: 3em;
+	font-weight: normal;
 }
 
 .page-header ul {
@@ -42,6 +45,7 @@ section	{
 
 .page-header a {
 	color: #fff;
+	text-decoration: none;
 }
 
 #work {
