@@ -25,7 +25,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default hidden">
 	<div class="container">
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<div class="navbar-header">
@@ -35,7 +35,7 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="#">Norbert Clyde Martinez Jr.</a>
+		<a class="navbar-brand" href="#">Norbert Clyde Martinez, Jr.</a>
 	</div>
 
 	<!-- Collect the nav links, forms, and other content for toggling -->
@@ -47,7 +47,16 @@
 		</ul>
 	</div><!-- /.navbar-collapse -->
 	</div><!-- /.container -->
-</nav>	
+</nav>
+
+<div class="page-header">
+	<h1>Norbert Clyde Martinez, Jr.</h1>
+	<ul class="navbar-nav inline">
+		<li><a href="#">Work</a></li>
+		<li><a href="#">CV</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -55,7 +64,8 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
 	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
 	crossorigin="anonymous"
-></script>
+>
+</script>
 
 </body>
 </html>
