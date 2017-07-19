@@ -12,14 +12,15 @@
 <body>
 
 <header>
-<div class="page-header">
-	<h1>Norbert Clyde Martinez,&nbsp;Jr.</h1>
-	<ul>
-		<li><a href="#work">Work</a></li>
-		<li><a href="#cv">CV</a></li>
-		<li><a href="#contact">Contact</a></li>
-	</ul>
-</div>
+	<img id="header-img" src="">
+	<div class="page-header">
+		<h1>Norbert Clyde Martinez,&nbsp;Jr.</h1>
+		<ul>
+			<li><a href="#work">Work</a></li>
+			<li><a href="#cv">CV</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</div>
 </header>
 
 <section class="container" id="work">
