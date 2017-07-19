@@ -12,7 +12,7 @@
 <body>
 
 <header>
-	<img id="header-img" src="">
+	<img id="header-img" src="/img/subway-portrait.jpg">
 	<div class="page-header">
 		<h1>Norbert Clyde Martinez,&nbsp;Jr.</h1>
 		<ul>
@@ -36,6 +36,7 @@
 </section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/portfolio-page.js" type="text/javascript"></script>
 
 </body>
 </html>
