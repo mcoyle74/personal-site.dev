@@ -12,7 +12,7 @@
 <body>
 
 <header>
-	<img id="header-img" src="/img/subway-portrait.jpg">
+	<img id="header-img" src="">
 	<div class="page-header">
 		<h1>Norbert Clyde Martinez,&nbsp;Jr.</h1>
 		<ul>
