@@ -1,0 +1,109 @@
+body {
+	font-family: Helvetica, sans-serif;
+	margin: 0;
+}
+
+header {
+	max-width: 600px;
+	margin: auto;
+}
+
+main {
+	max-width: 600px;
+	margin: auto;
+	text-align: center;
+}
+
+.container {
+	margin: 0 5vw;
+}
+
+.choices {
+	text-align: center;
+	min-height: 36px;
+	width: 100%;
+	padding: 0;
+	margin: 0 auto 5px auto;
+}
+
+.choices button {
+	height: 36px;
+	width: 32%;
+	font-size: 1.35em;
+	color: #fff;
+	background-color: #39f;
+	border: none;
+	border-radius: 7px;
+}
+
+.digit-box {
+	min-height: 40px;
+	max-width: 600px;
+	margin-bottom: 10px;
+}
+
+.digit,
+.operator {
+	position: relative;
+	font-family: 'Lucida Console', monospace;
+	font-size: 3em;
+	text-align: center;
+	height: 40px;
+	border: none;
+	padding: 0;
+}
+
+.digit {
+	width: 30px;
+}
+
+.operator {
+	width: 28px;
+}
+
+.clear {
+	clear: both;
+}
+
+.underlined {
+	border-bottom: 3px solid #39f;
+}
+
+#calculate {
+	border: none;
+	background-color: #225ecc;
+	color: #fff;
+	font-size: 1.1em;
+	height: 36px;
+	width: 100%;
+	border-radius: 7px;
+	margin-bottom: 5px;
+}
+
+#reset {
+	border: none;
+	background-color: #225ecc;
+	color: #fff;
+	font-size: 1.1em;
+	height: 36px;
+	width: 100%;
+	border-radius: 7px;
+}
+
+@media (min-width: 768px), (orientation: landscape) {
+	.choices {
+		width: 50%;
+	}
+
+	.underlined {
+		border-bottom: 4px solid #39f;
+	}
+
+	#reset {
+		width: 50%;
+	}
+
+	#calculate {
+		width: 50%;
+	}
+}
