@@ -61,6 +61,27 @@ main {
 	width: 28px;
 }
 
+.solution {
+	text-align: left;
+}
+
+.message {
+	height: 40px;
+	font-size: 1.5em;
+	line-height: 40px;
+	border-radius: 7px;
+}
+
+.success {
+	background-color: #e8ffd1;
+	color: #360;
+}
+
+.info {
+	background-color: #eee;
+	color: #444;
+}
+
 .clear {
 	clear: both;
 }
