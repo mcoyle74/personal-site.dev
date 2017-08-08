@@ -10,7 +10,7 @@ $(document).ready(function() {
 		plusBtn = $('#plus'),
 		minusBtn = $('#minus'),
 		resetBtn = $('#reset'),
-		calculateBtn = $('#calculate'),
+		equalsBtn = $('#equals'),
 		message = $('#message'),
 		solutions = $('.solution'),
 		total = 100,
@@ -76,7 +76,7 @@ $(document).ready(function() {
 		index = 1;
 	});
 
-	calculateBtn.click(function() {
+	equalsBtn.click(function() {
 
 		message.removeClass('hidden');
 
