@@ -14,6 +14,10 @@ main {
 	text-align: center;
 }
 
+h2 {
+	text-align: left;
+}
+
 .container {
 	margin: 0 5vw;
 }
@@ -65,13 +69,6 @@ main {
 	text-align: left;
 }
 
-.message {
-	height: 40px;
-	font-size: 1.5em;
-	line-height: 40px;
-	border-radius: 7px;
-}
-
 .success {
 	background-color: #e8ffd1;
 	color: #360;
@@ -90,6 +87,10 @@ main {
 	border-bottom: 3px solid #39f;
 }
 
+.hidden {
+	display: none;
+}
+
 #calculate {
 	border: none;
 	background-color: #225ecc;
@@ -99,6 +100,13 @@ main {
 	width: 100%;
 	border-radius: 7px;
 	margin-bottom: 5px;
+}
+
+#message {
+	height: 40px;
+	font-size: 1.5em;
+	line-height: 40px;
+	border-radius: 7px;
 }
 
 #reset {

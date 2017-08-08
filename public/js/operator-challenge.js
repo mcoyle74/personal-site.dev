@@ -11,6 +11,9 @@ $(document).ready(function() {
 		minusBtn = $('#minus'),
 		resetBtn = $('#reset'),
 		calculateBtn = $('#calculate'),
+		message = $('#message'),
+		solutions = $('.solution'),
+		total = 100,
 		index = 1,
 		integer = 1,
 		userExpression = integer.toString(),
@@ -69,15 +72,30 @@ $(document).ready(function() {
 		ops.removeAttr('value');
 		ops.slice(1).removeClass('underlined');
 		ops.first().addClass('underlined');
+		message.removeClass().addClass('hidden');
 		index = 1;
 	});
 
 	calculateBtn.click(function() {
+
+		message.removeClass('hidden');
+
 		if (results.includes(userExpression)) {
 			userSolutions.push(userExpression);
-			console.log('Success: ' + userExpression + ' = 100');
+			message.addClass('success').text('SUCCESS!');
+			solutions.eq(
+				userSolutions.length - 1
+			).removeClass(
+				'hidden'
+			).text(
+				userExpression + ' = ' + total
+			);
+
 		} else {
-			console.log('Failure: ' + userExpression + ' != 100');
+
+			message.addClass('info').text(
+				'Sorry ' + userExpression + ' does not total ' + total + '.'
+			);
 		}
 	});
 
@@ -118,7 +136,7 @@ $(document).ready(function() {
 
 		return expression.reduce((a, b) => {
 			return parseInt(a) + parseInt(b);
-		}) === 100;
+		}) === total;
 
 	}).map(result => {
 
@@ -139,7 +157,7 @@ $(document).ready(function() {
 	});
 
 	results.forEach(result => {
-		console.log(result + ' = 100');
+		console.log(result + ' = ' + total);
 	});
 
 });
