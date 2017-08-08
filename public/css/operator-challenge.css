@@ -31,10 +31,10 @@ h2 {
 }
 
 .choices button {
-	height: 36px;
+	height: 48px;
 	width: 32%;
-	font-size: 1.35em;
-	color: #fff;
+	font-size: 2em;
+	color: #000;
 	background-color: #39f;
 	border: none;
 	border-radius: 7px;
@@ -95,8 +95,8 @@ h2 {
 	border: none;
 	background-color: #225ecc;
 	color: #fff;
-	font-size: 1.35em;
-	height: 36px;
+	font-size: 2em;
+	height: 48px;
 	width: 100%;
 	border-radius: 7px;
 	margin-bottom: 5px;
@@ -114,7 +114,7 @@ h2 {
 	background-color: #225ecc;
 	color: #fff;
 	font-size: 1.1em;
-	height: 36px;
+	height: 48px;
 	width: 100%;
 	border-radius: 7px;
 }
