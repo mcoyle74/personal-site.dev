@@ -41,7 +41,7 @@ p {
 	width: 32.3%;
 	font-size: 2em;
 	color: #fff;
-	background-color: #c60;
+	background-color: #07b;
 	border: none;
 	border-radius: 7px;
 	padding: 0 5px 4px 5px;
@@ -118,7 +118,7 @@ p {
 
 #equals {
 	border: none;
-	background-color: #07b;
+	background-color: #c60;
 	color: #fff;
 	font-size: 2em;
 	height: 44px;
