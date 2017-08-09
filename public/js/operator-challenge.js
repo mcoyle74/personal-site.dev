@@ -15,8 +15,9 @@ $(document).ready(function() {
 		solutions = $('.solution'),
 		total = 100,
 		index = 1,
-		integer = 1,
-		userExpression = integer.toString(),
+		operand = '1',
+		nextDigit = 2,
+		userExpression = [],
 		userSolutions = [],
 		ternaries = [],
 		expressions = [],
@@ -50,21 +51,35 @@ $(document).ready(function() {
 	}
 
 	concatBtn.click(function() {
-		insertOperator(index, 'concat');
-		userExpression += (++integer);
-		index += 2;
+
+		if (index <= 15) {
+			insertOperator(index, 'concat');
+			operand += nextDigit++;
+			index += 2;
+		}
+
 	});
 
 	plusBtn.click(function() {
-		insertOperator(index, '+');
-		userExpression += ' + ' + (++integer);
-		index += 2;
+
+		if (index <= 15) {
+			insertOperator(index, '+');
+			userExpression.push(operand);
+			operand = (nextDigit++).toString();
+			index += 2;
+		}
+
 	});
 
 	minusBtn.click(function() {
-		insertOperator(index, '-');
-		userExpression += ' - ' + (++integer);
-		index += 2;
+
+		if (index <= 15) {
+			insertOperator(index, '-');
+			userExpression.push(operand);
+			operand = '-' + nextDigit++;
+			index += 2;
+		}
+
 	});
 
 	resetBtn.click(function() {
@@ -78,9 +93,21 @@ $(document).ready(function() {
 
 	equalsBtn.click(function() {
 
+		userExpression.push(operand);
 		message.removeClass('hidden');
+		inputs.slice(-2).removeClass('hidden underlined');
+		inputs.last().attr(
+			'value', userExpression.reduce(function(a, b) {
+				return parseInt(a) + parseInt(b);
+			})
+		);
+
+		operand = operand.replace(/-/, ' - ');
+		userExpression = userExpression.join(' + ').replace(/\+ -/g, '- ') + operand;
+		console.log(userExpression);
 
 		if (results.includes(userExpression)) {
+
 			userSolutions.push(userExpression);
 			message.addClass('success').text('SUCCESS!');
 			solutions.eq(
@@ -94,9 +121,10 @@ $(document).ready(function() {
 		} else {
 
 			message.addClass('info').text(
-				'Sorry ' + userExpression + ' does not total ' + total + '.'
+				'Sorry, that is not a solution. Press reset to try again.'
 			);
 		}
+
 	});
 
 	for (var i = 0; i < 6561; i++) {
