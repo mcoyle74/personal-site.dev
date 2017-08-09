@@ -125,7 +125,7 @@ $(document).ready(function() {
 
 		} else {
 
-			message.addClass('info').text(
+			message.addClass('fail').text(
 				String.fromCharCode(10007) + ' Sorry, that is not a solution. Press reset to try again.'
 			);
 		}
