@@ -114,7 +114,7 @@ $(document).ready(function() {
 		if (results.includes(userExpression)) {
 
 			userSolutions.push(userExpression);
-			message.addClass('success').text('SUCCESS!');
+			message.addClass('success').text(String.fromCharCode(10003) + ' Success!');
 			solutions.eq(
 				userSolutions.length - 1
 			).removeClass(
@@ -126,7 +126,7 @@ $(document).ready(function() {
 		} else {
 
 			message.addClass('info').text(
-				'Sorry, that is not a solution. Press reset to try again.'
+				String.fromCharCode(10007) + ' Sorry, that is not a solution. Press reset to try again.'
 			);
 		}
 
