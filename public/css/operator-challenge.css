@@ -125,7 +125,7 @@ h2 {
 
 @media (min-width: 768px), (orientation: landscape) {
 	.choices {
-		width: 50%;
+		width: 60%;
 	}
 
 	.underlined {
@@ -133,10 +133,10 @@ h2 {
 	}
 
 	#reset {
-		width: 50%;
+		width: 60%;
 	}
 
-	#calculate {
-		width: 50%;
+	#equals {
+		width: 60%;
 	}
 }
