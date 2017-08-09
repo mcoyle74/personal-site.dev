@@ -83,12 +83,16 @@ $(document).ready(function() {
 	});
 
 	resetBtn.click(function() {
+
 		inputs.removeAttr('style');
 		ops.removeAttr('value');
 		ops.slice(1).removeClass('underlined');
 		ops.first().addClass('underlined');
 		message.removeClass().addClass('hidden');
 		index = 1;
+		operand = '1';
+		nextDigit = 2;
+
 	});
 
 	equalsBtn.click(function() {
@@ -102,8 +106,7 @@ $(document).ready(function() {
 			})
 		);
 
-		operand = operand.replace(/-/, ' - ');
-		userExpression = userExpression.join(' + ').replace(/\+ -/g, '- ') + operand;
+		userExpression = userExpression.join(' + ').replace(/\+ -/g, '- ');
 		console.log(userExpression);
 
 		if (results.includes(userExpression)) {
