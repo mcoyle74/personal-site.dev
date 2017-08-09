@@ -37,8 +37,8 @@ p {
 }
 
 .choices button {
-	height: 48px;
-	width: 32%;
+	height: 44px;
+	width: 32.3%;
 	font-size: 2em;
 	color: #fff;
 	background-color: #c60;
@@ -120,7 +120,7 @@ p {
 	background-color: #07b;
 	color: #fff;
 	font-size: 2em;
-	height: 48px;
+	height: 44px;
 	width: 100%;
 	border-radius: 7px;
 	margin-bottom: 5px;
@@ -138,7 +138,7 @@ p {
 	background-color: #fff;
 	color: #07b;
 	font-size: 1.1em;
-	height: 48px;
+	height: 44px;
 	width: 100%;
 	box-sizing: border-box;
 	border: 3px solid #07b;
