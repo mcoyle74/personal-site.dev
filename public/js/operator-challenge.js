@@ -12,12 +12,14 @@ $(document).ready(function() {
 		resetBtn = $('#reset'),
 		equalsBtn = $('#equals'),
 		message = $('#message'),
+		attempts = $('.attempts ol'),
 		solutions = $('.solution'),
 		total = 100,
 		index = 1,
 		operand = '1',
 		nextDigit = 2,
 		userExpression = [],
+		userAttempts = [],
 		userSolutions = [],
 		ternaries = [],
 		expressions = [],
@@ -48,6 +50,49 @@ $(document).ready(function() {
 		inputs.eq(index + 2).addClass(
 			'underlined'
 		);
+	}
+
+	function displayExpressionResult(expressionArray) {
+
+		var expResult = userExpression.reduce(function(a, b) {
+				return parseInt(a) + parseInt(b);
+		});
+		message.removeClass('hidden');
+		inputs.slice(-2).removeClass('hidden underlined');
+		inputs.last().attr(
+			'value', expResult.toString()
+		);
+
+		userExpression = userExpression.join(' + ').replace(/\+ -/g, '- ');
+
+		if (results.includes(userExpression)) {
+
+			userSolutions.push(userExpression);
+			message.addClass('success').text(String.fromCharCode(10003) + ' Success!');
+			solutions.eq(
+				userSolutions.length - 1
+			).removeClass(
+				'hidden'
+			).text(
+				userExpression + ' = ' + expResult
+			);
+
+		} else {
+
+			if (userAttempts.includes(userExpression)) {
+				message.addClass('info').text(
+					'You already tried that. Press reset to try something else.'
+				);
+			} else {
+				userAttempts.push(userExpression + ' = ' + expResult);
+				message.addClass('fail').text(
+					String.fromCharCode(10007) + ' Sorry, that is not a solution. Press reset to try again.'
+				);
+				attempts.prepend('<li>' + userExpression + ' = ' + expResult + '</li>');
+			}
+
+		}
+		
 	}
 
 	concatBtn.click(function() {
@@ -100,34 +145,7 @@ $(document).ready(function() {
 	equalsBtn.click(function() {
 
 		userExpression.push(operand);
-		message.removeClass('hidden');
-		inputs.slice(-2).removeClass('hidden underlined');
-		inputs.last().attr(
-			'value', userExpression.reduce(function(a, b) {
-				return parseInt(a) + parseInt(b);
-			})
-		);
-
-		userExpression = userExpression.join(' + ').replace(/\+ -/g, '- ');
-
-		if (results.includes(userExpression)) {
-
-			userSolutions.push(userExpression);
-			message.addClass('success').text(String.fromCharCode(10003) + ' Success!');
-			solutions.eq(
-				userSolutions.length - 1
-			).removeClass(
-				'hidden'
-			).text(
-				userExpression + ' = ' + total
-			);
-
-		} else {
-
-			message.addClass('fail').text(
-				String.fromCharCode(10007) + ' Sorry, that is not a solution. Press reset to try again.'
-			);
-		}
+		displayExpressionResult(userExpression);
 
 	});
 
