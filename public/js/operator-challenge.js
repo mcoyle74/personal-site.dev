@@ -109,7 +109,6 @@ $(document).ready(function() {
 		);
 
 		userExpression = userExpression.join(' + ').replace(/\+ -/g, '- ');
-		console.log(userExpression);
 
 		if (results.includes(userExpression)) {
 
@@ -187,10 +186,6 @@ $(document).ready(function() {
 
 	}).map(result => {
 		return result.join('');
-	});
-
-	results.forEach(result => {
-		console.log(result + ' = ' + total);
 	});
 
 });
