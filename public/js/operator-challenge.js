@@ -85,10 +85,12 @@ $(document).ready(function() {
 	resetBtn.click(function() {
 
 		inputs.removeAttr('style');
+		inputs.slice(-2).addClass('hidden');
 		ops.removeAttr('value');
 		ops.slice(1).removeClass('underlined');
 		ops.first().addClass('underlined');
 		message.removeClass().addClass('hidden');
+		userExpression = [];
 		index = 1;
 		operand = '1';
 		nextDigit = 2;
