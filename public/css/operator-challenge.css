@@ -72,8 +72,16 @@ p {
 }
 
 .solution {
+	font-family: 'Lucida Console', monospace;
 	text-align: left;
 	margin: 8px 0;
+}
+
+.symbol {
+	font-family: 'Lucida Console', monospace;
+	background-color: #eee;
+	font-weight: bold;
+	padding: 2px 7px;	
 }
 
 .success {
