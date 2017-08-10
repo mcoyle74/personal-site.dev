@@ -79,7 +79,6 @@ p {
 }
 
 .symbol {
-	font-family: 'Lucida Console', monospace;
 	background-color: #eee;
 	font-weight: bold;
 	padding: 2px 7px;	
@@ -120,6 +119,10 @@ p {
 .solutions {
 	float: left;
 	width: 100%;
+}
+
+.attempts li {
+	font-family: 'Lucida Console', monospace;
 }
 
 .attempts h2,
