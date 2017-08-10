@@ -68,16 +68,26 @@ $(document).ready(function() {
 
 		if (results.includes(userExpression)) {
 
-			userSolutions.push(userExpression);
-			message.addClass('success').text('\u2713 Success!');
-			solutions.eq(
-				userSolutions.length - 1
-			).removeClass(
-				'hidden'
-			).text(
-				userExpression + ' = ' + expResult
-			);
-			$('.solutions>h2').text('Solutions (' + (userSolutions.length) + '):');
+			if (userSolutions.includes(userExpression)) {
+
+				message.addClass('info').text(
+					"\u21bb That's one of the solutions already found."
+				);
+
+			} else {
+
+				userSolutions.push(userExpression);
+				message.addClass('success').text('\u2713 Success!');
+				solutions.eq(
+					userSolutions.length - 1
+				).removeClass(
+					'hidden'
+				).text(
+					userExpression + ' = ' + expResult
+				);
+				$('.solutions>h2').text('Solutions (' + (userSolutions.length) + '):');
+
+			}
 
 		} else {
 
