@@ -71,7 +71,7 @@ $(document).ready(function() {
 			if (userSolutions.includes(userExpression)) {
 
 				message.addClass('info').text(
-					"\u21bb That's one of the solutions already found."
+					"\u21bb That solution is already found. Press reset to begin again."
 				);
 
 			} else {
