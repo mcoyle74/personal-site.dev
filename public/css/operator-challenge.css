@@ -16,7 +16,6 @@ main {
 
 h1,
 h2 {
-	text-align: left;
 	margin-bottom: 12px;
 }
 
@@ -126,11 +125,7 @@ ul {
 .solutions {
 	float: left;
 	width: 100%;
-}
-
-.attempts h2,
-.solutions h2 {
-	text-align: center;
+	text-align: left;
 }
 
 .digit:last-child {
