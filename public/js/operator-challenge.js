@@ -13,7 +13,7 @@ $(document).ready(function() {
 		equalsBtn = $('#equals'),
 		message = $('#message'),
 		attempts = $('.attempts ul'),
-		solutions = $('.solution'),
+		solutions = $('.solutions li'),
 		total = 100,
 		index = 1,
 		operand = '1',

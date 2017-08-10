@@ -78,9 +78,15 @@ ul {
 	width: 28px;
 }
 
-.solution {
+.solutions li {
 	font-family: 'Lucida Console', monospace;
 	margin: 5px 0;
+}
+
+.attempts li {
+	font-family: 'Lucida Console', monospace;
+	list-style: none;
+	margin-bottom: 5px;
 }
 
 .symbol {
@@ -104,10 +110,6 @@ ul {
 	color: #c60;
 }
 
-.clear {
-	clear: both;
-}
-
 .underlined {
 	border-bottom: 3px solid #07b;
 }
@@ -124,12 +126,6 @@ ul {
 .solutions {
 	float: left;
 	width: 100%;
-}
-
-.attempts li {
-	font-family: 'Lucida Console', monospace;
-	list-style: none;
-	margin-bottom: 5px;
 }
 
 .attempts h2,
