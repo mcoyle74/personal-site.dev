@@ -69,7 +69,7 @@ $(document).ready(function() {
 		if (results.includes(userExpression)) {
 
 			userSolutions.push(userExpression);
-			message.addClass('success').text(String.fromCharCode(10003) + ' Success!');
+			message.addClass('success').text('\u2713 Success!');
 			solutions.eq(
 				userSolutions.length - 1
 			).removeClass(
@@ -84,12 +84,12 @@ $(document).ready(function() {
 			userExpression = userExpression + ' = ' + expResult;
 			if (userAttempts.includes(userExpression)) {
 				message.addClass('info').text(
-					'You already tried that. Press reset to try something else.'
+					'\u21bb You tried that. Press reset to begin again.'
 				);
 			} else {
 				userAttempts.push(userExpression);
 				message.addClass('fail').text(
-					String.fromCharCode(10007) + ' Sorry, that is not a solution. Press reset to try again.'
+					'\u2717 Sorry, that is not a solution. Press reset to begin again.'
 				);
 				attempts.prepend('<li>' + userExpression + '</li>');
 				$('.attempts>h2').text('Attempts (' + (++attemptCount) + '):');
