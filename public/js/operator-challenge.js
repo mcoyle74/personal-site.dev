@@ -158,8 +158,14 @@ $(document).ready(function() {
 
 	equalsBtn.click(function() {
 
-		userExpression.push(operand);
-		displayExpressionResult(userExpression);
+		if (index < 17) {
+			message.removeClass().addClass('info').text('There are more choices.');
+		} else if (index === 17 && Array.isArray(userExpression)) {
+			userExpression.push(operand);
+			displayExpressionResult(userExpression);
+		} else {
+			message.removeClass().addClass('fail').text('\u26d4 Please press reset to continue.');
+		}
 
 	});
 
