@@ -71,7 +71,7 @@ $(document).ready(function() {
 			if (userSolutions.includes(userExpression)) {
 
 				message.addClass('info').text(
-					"\u21bb That solution is already found. Press reset to begin again."
+					"\u267b That solution is already found. Press reset to begin again."
 				);
 
 			} else {
@@ -94,12 +94,12 @@ $(document).ready(function() {
 			userExpression = userExpression + ' = ' + expResult;
 			if (userAttempts.includes(userExpression)) {
 				message.addClass('info').text(
-					'\u21bb You tried that. Press reset to begin again.'
+					'\u267b You tried that. Press reset to begin again.'
 				);
 			} else {
 				userAttempts.push(userExpression);
 				message.addClass('fail').text(
-					'\u2717 Sorry, that is not a solution. Press reset to begin again.'
+					'\u2718 Sorry, that is not a solution. Press reset to begin again.'
 				);
 				attempts.prepend('<li>' + userExpression + '</li>');
 				$('.attempts>h2').text('Attempts (' + (++attemptCount) + '):');
