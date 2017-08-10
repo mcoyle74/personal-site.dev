@@ -77,7 +77,9 @@ $(document).ready(function() {
 			} else {
 
 				userSolutions.push(userExpression);
-				message.addClass('success').text('\u2713 Success!');
+				message.addClass('success').text(
+					"\u2713 Success! You've found " + userSolutions.length + ' of ' + results.length + ' solutions.'
+				);
 				solutions.eq(
 					userSolutions.length - 1
 				).removeClass(
