@@ -12,12 +12,13 @@ $(document).ready(function() {
 		resetBtn = $('#reset'),
 		equalsBtn = $('#equals'),
 		message = $('#message'),
-		attempts = $('.attempts ol'),
+		attempts = $('.attempts ul'),
 		solutions = $('.solution'),
 		total = 100,
 		index = 1,
 		operand = '1',
 		nextDigit = 2,
+		attemptCount = 0,
 		userExpression = [],
 		userAttempts = [],
 		userSolutions = [],
@@ -76,6 +77,7 @@ $(document).ready(function() {
 			).text(
 				userExpression + ' = ' + expResult
 			);
+			$('.solutions>h2').text('Solutions (' + (userSolutions.length) + '):');
 
 		} else {
 
@@ -89,6 +91,7 @@ $(document).ready(function() {
 					String.fromCharCode(10007) + ' Sorry, that is not a solution. Press reset to try again.'
 				);
 				attempts.prepend('<li>' + userExpression + ' = ' + expResult + '</li>');
+				$('.attempts>h2').text('Attempts (' + (++attemptCount) + '):');
 			}
 
 		}

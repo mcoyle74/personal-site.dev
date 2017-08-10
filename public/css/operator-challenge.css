@@ -24,6 +24,10 @@ p {
 	margin: 10px 0;
 }
 
+ul {
+	padding: 0;
+}
+
 .container {
 	margin: 0 3vw;
 }
@@ -123,6 +127,7 @@ p {
 
 .attempts li {
 	font-family: 'Lucida Console', monospace;
+	list-style: none;
 }
 
 .attempts h2,
