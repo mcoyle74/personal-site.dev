@@ -81,16 +81,17 @@ $(document).ready(function() {
 
 		} else {
 
+			userExpression = userExpression + ' = ' + expResult;
 			if (userAttempts.includes(userExpression)) {
 				message.addClass('info').text(
 					'You already tried that. Press reset to try something else.'
 				);
 			} else {
-				userAttempts.push(userExpression + ' = ' + expResult);
+				userAttempts.push(userExpression);
 				message.addClass('fail').text(
 					String.fromCharCode(10007) + ' Sorry, that is not a solution. Press reset to try again.'
 				);
-				attempts.prepend('<li>' + userExpression + ' = ' + expResult + '</li>');
+				attempts.prepend('<li>' + userExpression + '</li>');
 				$('.attempts>h2').text('Attempts (' + (++attemptCount) + '):');
 			}
 
