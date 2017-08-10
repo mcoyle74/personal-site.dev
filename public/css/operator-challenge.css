@@ -27,6 +27,7 @@ p {
 ul {
 	padding: 0;
 	list-style: none;
+	text-align: left;
 }
 
 .container {
@@ -79,8 +80,7 @@ ul {
 
 .solution {
 	font-family: 'Lucida Console', monospace;
-	text-align: left;
-	margin: 8px 0;
+	margin: 5px 0;
 }
 
 .symbol {
@@ -129,6 +129,7 @@ ul {
 .attempts li {
 	font-family: 'Lucida Console', monospace;
 	list-style: none;
+	margin-bottom: 5px;
 }
 
 .attempts h2,
