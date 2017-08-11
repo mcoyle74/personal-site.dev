@@ -13,7 +13,7 @@ $(document).ready(function() {
 		equalsBtn = $('#equals'),
 		message = $('#message'),
 		attempts = $('.attempts ul'),
-		solutions = $('.solutions li'),
+		solutions = $('.solutions ul'),
 		total = 100,
 		index = 1,
 		operand = '1',
@@ -131,12 +131,8 @@ $(document).ready(function() {
 				message.addClass('success').text(
 					"\u2713 Success! You've found " + userSolutions.length + ' of ' + results.length + ' solutions.'
 				);
-				solutions.eq(
-					userSolutions.length - 1
-				).removeClass(
-					'hidden'
-				).text(
-					userExpression + ' = ' + expResult
+				solutions.prepend(
+					'<li>' + userExpression + ' = ' + expResult + '</li>'
 				);
 				$('.solutions>h2').text('Solutions (' + (userSolutions.length) + '):');
 
