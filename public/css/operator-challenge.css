@@ -50,6 +50,7 @@ ul {
 	border: none;
 	border-radius: 7px;
 	padding: 0 5px 4px 5px;
+	vertical-align: middle;
 }
 
 .digit-box {
