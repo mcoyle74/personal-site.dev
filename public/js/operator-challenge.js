@@ -24,9 +24,10 @@ $(document).ready(function() {
 		userSolutions = [],
 		ternaries = [],
 		expressions = [],
+		results = [],
 		ternary,
 		expression,
-		results;
+		result;
 
 	function insertOperator(index, op) {
 
@@ -174,58 +175,43 @@ $(document).ready(function() {
 	for (var i = 0; i < 6561; i++) {
 
 		ternary = i.toString(3);
-
 		while (ternary.length < 8) {
 			ternary = '0' + ternary;
 		};
-
 		ternaries.push(ternary);
 			
 	}
 
 	ternaries.forEach(sequence => {
 
-		expression = '';
-		
+		expression = '1';
 		for (var i = 0; i < sequence.length; i++) {
-
-			if (sequence[i] == 0) {
-				expression += i + 1;
-			} else if (sequence[i] == 1) {
-				expression += (i + 1) + ' -';
-			} else {
-				expression += (i + 1) + ' ';
+			switch (sequence[i]) {
+				case '2':
+					expression += nextDigit++;
+					break;
+				case '1':
+					expression += ' ' + nextDigit++;
+					break;
+				case '0':
+					expression += ' -' + nextDigit++;
+					break;
 			};
-
 		};
-
-		expression += '9';
 		expressions.push(expression.split(' '));
+		nextDigit = 2;
 		
 	});
+	
+	expressions.forEach(expression => {
 
-	results = expressions.filter(expression => {
-
-		return expression.reduce((a, b) => {
+		result = expression.reduce((a, b) => { 
 			return parseInt(a) + parseInt(b);
-		}) === total;
-
-	}).map(result => {
-
-		return result.map((value, i, arr) => {
-
-			if (i === 0) {
-				return value;
-			} else if (Math.sign(value) === 1) {
-				return ' + ' + Math.abs(value);
-			} else {
-				return ' - ' + Math.abs(value);
-			}
-
 		});
+		if (result === total) {
+			results.push(expression.join(' + ').replace(/ \+ -/g, ' - '));
+		}
 
-	}).map(result => {
-		return result.join('');
 	});
 
 });
