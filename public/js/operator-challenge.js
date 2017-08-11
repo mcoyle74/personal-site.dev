@@ -22,12 +22,62 @@ $(document).ready(function() {
 		userExpression = [],
 		userAttempts = [],
 		userSolutions = [],
-		ternaries = [],
-		expressions = [],
-		results = [],
-		ternary,
-		expression,
-		result;
+		results;
+
+	function getSolutions(total) {
+
+		var ternaries = [],
+			expressions = [],
+			results = [],
+			ternary,
+			expression,
+			result,
+			nextDigit;
+		
+		for (var i = 0; i < 6561; i++) {
+
+			ternary = i.toString(3);
+			while (ternary.length < 8) {
+				ternary = '0' + ternary;
+			};
+			ternaries.push(ternary);
+				
+		}
+
+		ternaries.forEach(sequence => {
+
+			expression = '1';
+			nextDigit = 2;
+			for (var i = 0; i < sequence.length; i++) {
+				switch (sequence[i]) {
+					case '2':
+						expression += nextDigit++;
+						break;
+					case '1':
+						expression += ' ' + nextDigit++;
+						break;
+					case '0':
+						expression += ' -' + nextDigit++;
+						break;
+				};
+			};
+			expressions.push(expression.split(' '));
+			
+		});
+
+		expressions.forEach(expression => {
+
+			result = expression.reduce((a, b) => { 
+				return parseInt(a) + parseInt(b);
+			});
+			if (result === total) {
+				results.push(expression.join(' + ').replace(/ \+ -/g, ' - '));
+			}
+
+		});
+
+		return results;
+	}
 
 	function insertOperator(index, op) {
 
@@ -172,46 +222,5 @@ $(document).ready(function() {
 
 	});
 
-	for (var i = 0; i < 6561; i++) {
-
-		ternary = i.toString(3);
-		while (ternary.length < 8) {
-			ternary = '0' + ternary;
-		};
-		ternaries.push(ternary);
-			
-	}
-
-	ternaries.forEach(sequence => {
-
-		expression = '1';
-		for (var i = 0; i < sequence.length; i++) {
-			switch (sequence[i]) {
-				case '2':
-					expression += nextDigit++;
-					break;
-				case '1':
-					expression += ' ' + nextDigit++;
-					break;
-				case '0':
-					expression += ' -' + nextDigit++;
-					break;
-			};
-		};
-		expressions.push(expression.split(' '));
-		nextDigit = 2;
-		
-	});
-	
-	expressions.forEach(expression => {
-
-		result = expression.reduce((a, b) => { 
-			return parseInt(a) + parseInt(b);
-		});
-		if (result === total) {
-			results.push(expression.join(' + ').replace(/ \+ -/g, ' - '));
-		}
-
-	});
-
+	results = getSolutions(total);
 });
