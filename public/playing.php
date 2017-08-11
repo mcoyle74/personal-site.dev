@@ -40,7 +40,7 @@ extract(pageController());
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<p>This page will soon be filled with photos, links, and other information associated with puzzles, riddles, games, code challenges and other fun stuff.</p>
+				<a href="/operator-challenge.html" target="_blank">Operator Challenge</a>
 			</div>
 			<div class="col-md-5">
 			</div>
