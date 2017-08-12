@@ -91,11 +91,11 @@ $(document).ready(function() {
 
 			inputs.eq(index).animate({
 				width: '0'
-			}, 500);
+			}, 300);
 
 			inputs.slice(index + 1).animate({
 				left: '-=12'
-			}, 500);
+			}, 300);
 
 		}
 
