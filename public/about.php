@@ -47,7 +47,7 @@ extract(pageController());
 				<ul>
 					<li>Born April 10, 1974 in San Antonio, Texas.</li>
 					<li>Served in the United States Marine Corps in the mid 90s.</li>
-					<li>I spent the late 90s builing furniture.</li>
+					<li>I spent the late 90s building furniture.</li>
 					<li>Began studying visual arts at San Antonio College in 1999, built a portfolio and in 2005 won a merit scholarship to The School of the Art Institute of Chicago.</li>
 					<li>I have two amazing children I love and cherish more than anything.</li>
 					<li>I was awarded a fellowship from The University of Texas at Austin and spent three years there as a graduate student and teaching assistant in the Department of Art and Art History.</li>
