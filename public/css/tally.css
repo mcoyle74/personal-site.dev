@@ -15,21 +15,21 @@ body {
 	padding: 0 4px;
 }
 
-.tally-mark {
+.tally {
 	background-color: #333;
-	height: 32px;
-	width: 4px;
 	float: left;
+	width: 4px;
+}
+
+.mark {
+	height: 32px;
 	margin: 8px 6px 8px 0;
 }
 
-.tally-cross {
-	background-color: #333;
+.cross {
 	height: 50px;
-	width: 4px;
 	position: relative;
 	top: -1px;
 	left: -25px;
 	transform: rotate(-60deg);
-	float: left;
 }
