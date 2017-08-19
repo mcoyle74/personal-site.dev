@@ -2,19 +2,35 @@
 
 function addNextTally() {
 
-	if ($('.tally').length % 5 === 0) {
+	if (tallyCount() % 5 === 0) {
 
-		$('.container').first().append('<div class="tally-group"></div>');
-		$('.tally-group').last().append('<div class="tally mark"></div>');
+		addTallyGroup();
+		addTallyMark();
 
 	} else {
 
-		$('.tally').length % 5 === 4 ? (
-			$('.tally-group').last().append('<div class="tally cross"></div>')
+		tallyCount() % 5 === 4 ? (
+			addTallyCross()
 		) : (
-			$('.tally-group').last().append('<div class="tally mark"></div>')
+			addTallyMark()
 		);
 
 	}
 
+}
+
+function addTallyGroup() {
+	$('.container').first().append('<div class="tally-group"></div>');
+}
+
+function addTallyMark() {
+	$('.tally-group').last().append('<div class="tally mark"></div>');
+}
+
+function addTallyCross() {
+	$('.tally-group').last().append('<div class="tally cross"></div>');
+}
+
+function tallyCount() {
+	return $('.tally').length;
 }
